@@ -81,4 +81,7 @@ p{
   opacity: 0.6;
 }
 
-/* Nihongo Slide styles*/
+/* Project Slide styles*/
+.project {
+  padding: 30px;
+}
