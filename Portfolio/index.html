@@ -3,19 +3,32 @@
 <head>
   <meta charset="utf-8">
   <title>Jason Wright - Web Developer</title>
-  <script
-  src="https://code.jquery.com/jquery-3.2.1.min.js"
-  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-  crossorigin="anonymous"></script>
-
   <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="style.css">
-  <link rel="stylesheet" href="jquery.fullPage.css">
-<script type="text/javascript" src="jquery.fullPage.js"></script>
+  <link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
 
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+	<script type="text/javascript" src="scrolloverflow.js"></script>
+
+	<script type="text/javascript" src="jquery.fullPage.js"></script>
+	<script type="text/javascript" src="examples.js"></script>
+
+
+  <script type="text/javascript">
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				anchors: ['firstPage', 'secondPage', '3rdPage', '4thPage'],
+
+				scrollOverflow: true
+			});
+		});
+	</script>
 </head>
-<body>
 
+<body>
   <div id="fullpage">
     <div class="section " id="section0">
       <div class="content">
@@ -23,28 +36,85 @@
         <p>Web Developer</p>
       </div>
     </div>
+    <!-- Section 2 - Dev Projects -->
     <div class="section" id="section1">
       <div class="slide" id="slide1">
         <div class="content">
           <h1>Development Projects</h1>
-          <p></p>
         </div>
       </div>
       <div class="slide" id="slide2">
-        <div class="content">
-          <h1>Design Projects</h1>
+        <div class="content container nihongo">
+          <div class="row">
+            <div class="col-12">
+              <h1 >NihonGo</h1>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 col-lg-6">
+              <p class="contentText">NihonGo! (meaning Japanese in...Japanese) is an app for learning the Japanese Hiragana and Katakana character sets. Through my own experiences of trying to learn what is a pretty complicated writing system I developed an app that allows the learning and practice of character sets, measuring progress through tests and moving on to learning to construct words. Built with a Rails API paired with a PostgresSQL database and AngularJS front end the app is fully authenticated.
+              </p>
+              <div class="row">
+                <div class="col-6">
+                  <a href="https://github.com/Jwrighty/WDI_PROJECT_4_CLIENT" target="_blank"><img src="https://image.flaticon.com/icons/svg/25/25231.svg" alt="" class="github"></a>
+                  <p class="githubtext">Github</p>
+                </div>
+                <div class="col-6">
+                  <a href="https://nihongo-client.herokuapp.com/" target="_blank"><img src="https://image.flaticon.com/icons/svg/25/25694.svg" alt="" class="website"></a>
+                  <p class="websitetext">Website</p>
+                </div>
+
+
+              </div>
+            </div>
+            <div class="col-md-12 col-lg-6">
+              <img src="https://i.imgur.com/ftn7BID.jpg" alt="" class="img-fluid">
+            </div>
+          </div>
+
         </div>
       </div>
       <div class="slide" id="slide3">
-        <div class="content">
-          <h1>Photography</h1>
+        <div class="content container nihongo">
+          <div class="row">
+            <div class="col-12">
+              <h1 >NihonGo</h1>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 col-lg-6">
+              <p class="contentText">NihonGo! (meaning Japanese in...Japanese) is an app for learning the Japanese Hiragana and Katakana character sets. Through my own experiences of trying to learn what is a pretty complicated writing system I developed an app that allows the learning and practice of character sets, measuring progress through tests and moving on to learning to construct words. Built with a Rails API paired with a PostgresSQL database and AngularJS front end the app is fully authenticated.
+              </p>
+            </div>
+            <div class="col-md-12 col-lg-6">
+              <img src="https://i.imgur.com/ftn7BID.jpg" alt="" class="img-fluid">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-2">
+              <a href="https://github.com/Jwrighty/WDI_PROJECT_4_CLIENT"><img src="https://image.flaticon.com/icons/svg/25/25231.svg" alt="" class="github"></a>
+              <p>Github</p>
+
+
+              <a href="https://nihongo-client.herokuapp.com/"><img src="https://image.flaticon.com/icons/svg/25/25694.svg" alt="" class="website"></a>
+              <p>Website</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
+
+    <!-- Section 3 - Design Projects -->
     <div class="section" id="section2">
       <div class="content">
         <h1>Skills</h1>
-        <p></p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
       </div>
     </div>
     <div class="section" id="section3">
@@ -54,17 +124,8 @@
       </div>
     </div>
   </div>
-  <script>
 
-  $(document).ready(function() {
-    $('#fullpage').fullpage({
-      anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
-      menu: '#menu',
-      css3:true
-    });
-  });
 
-  </script>
 </body>
 
 </html>
