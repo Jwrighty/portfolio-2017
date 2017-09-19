@@ -55,6 +55,7 @@ p{
   font-size: 1em;
 }
 
+
 /* Section 1
 * --------------------------------------- */
 #section0{
@@ -72,10 +73,11 @@ p{
 /* Section 2
 * --------------------------------------- */
 #section1{
-  background-color: #fff;
+  background-color: #E0E0E0;
+
 }
 #section1 h1{
-  color: #444;
+  color: #292929;
 }
 #section1 p{
   opacity: 0.8;
@@ -85,12 +87,23 @@ p{
 /* Section 3
 * --------------------------------------- */
 #section2{
-  background-color: #46aec0;
+  background-color: #A0ACAD;
 }
 #section2 h1{
-  color: #F2F2F2;
+  color: #292929;
 }
 #section2 p{
+  opacity: 0.6;
+}
+/* Section 4
+* --------------------------------------- */
+#section3{
+  background-color: #DCDCDD;
+}
+#section3 h1{
+  color: #292929;
+}
+#section3 p{
   opacity: 0.6;
 }
 
@@ -123,6 +136,7 @@ p{
 }
 
 
+/* BROWSER CSS CHANGES */
 @media only screen and (min-device-width : 900px) {
   .project {
     padding: 30px;
@@ -151,8 +165,8 @@ p{
     width: 100%;
     opacity: 0;
     transition: .3s ease;
-    background-color: #f5f5f5;
-    border: 3px solid grey;
+    background-color: rgba(255,255,255,1);
+    border: 2px solid grey;
   }
 
   .overlay h3 {
@@ -163,8 +177,8 @@ p{
   .overlay p {
     padding: 0 30px;
     font-size: 1.1em;
+    color: black;
   }
-
 
   .projectContainer:hover .overlay {
     opacity: 1;
@@ -187,4 +201,53 @@ p{
   .websitetext {
     font-size: 1em;
   }
+}
+
+.btn {
+  color: #292929;
+  transition: all 380ms ease-in-out;
+  margin: 5px;
+  border: 1px solid rgba(255, 0, 0, 0.2);
+  cursor: crosshair;
+}
+
+
+.btn:hover {
+  color: white;
+  background-color: rgba(255, 0, 0, 0.5);
+}
+
+.btn:focus,
+.btn:active {
+  box-shadow: none;
+}
+
+.menu {
+  margin-top: 20px;
+  /*position: absolute;*/
+  /*left: -50%;
+  right: -50%;
+  bottom: -200%;*/
+}
+
+hr {
+  margin: 0 auto;
+  width: 20%;
+  height: 2px;
+  background-color: #96120C;
+}
+
+@keyframes line_animation {
+  from {
+    width: 0%;
+  }
+  to {
+    width:20%;
+  }
+}
+.line {
+
+  animation-name: line_animation;
+  animation-duration: 1s;
+  animation-timing-function: linear;
 }
