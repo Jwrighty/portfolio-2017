@@ -73,11 +73,14 @@ p{
 /* Section 2
 * --------------------------------------- */
 #section1{
-  background-color: #E0E0E0;
+  background-color: #434343;
+  background-image: url('https://glennstovall.com/wp-content/uploads/2014/05/coding-960x567.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 
 }
 #section1 h1{
-  color: #292929;
+  color: white;
 }
 #section1 p{
   opacity: 0.8;
@@ -87,7 +90,8 @@ p{
 /* Section 3
 * --------------------------------------- */
 #section2{
-  background-color: #A0ACAD;
+  background-color: #919191;
+
 }
 #section2 h1{
   color: #292929;
@@ -204,17 +208,19 @@ p{
 }
 
 .btn {
-  color: #292929;
+  color: #656565;
   transition: all 380ms ease-in-out;
   margin: 5px;
-  border: 1px solid rgba(255, 0, 0, 0.2);
+  border: 1px solid rgba(255, 0, 0, 0.3);
   cursor: crosshair;
+  width: 20%;
 }
 
 
 .btn:hover {
   color: white;
   background-color: rgba(255, 0, 0, 0.5);
+  width: 20%;
 }
 
 .btn:focus,
