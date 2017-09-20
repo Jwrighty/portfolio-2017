@@ -207,10 +207,12 @@ p{
     color: grey;
     margin-top: 20px;
     margin-right: 40px;
+    transition: all 100ms ease-in-out;
   }
 
   .fa-github:hover {
     color: white;
+
   }
 
   .githubtext {
@@ -219,6 +221,7 @@ p{
 
   .fa-link {
     color: grey;
+
   }
 
   .fa-link:hover {
@@ -228,11 +231,28 @@ p{
   .websitetext {
     font-size: 1em;
   }
+
+  .fa-linkedin-square {
+    color: grey;
+    margin-right: 40px;
+    transition: all 100ms ease-in-out;
+  }
+  .fa-linkedin-square:hover {
+    color: white;
+  }
+
+  .fa-envelope {
+    color: grey;
+    transition: all 100ms ease-in-out;
+  }
+  .fa-envelope:hover {
+    color: white;
+  }
 }
 
 .btn {
   color: #656565;
-  transition: all 380ms ease-in-out;
+  transition: all 280ms ease-in-out;
   margin: 5px;
   border: 1px solid rgba(255, 0, 0, 0.3);
   cursor: crosshair;
