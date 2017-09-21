@@ -119,7 +119,7 @@ p{
   color: #fff;
 }
 #section3 p{
-  opacity: 0.6;
+  /*opacity: 1;*/
 }
 
 /*Responsive CSS*/
@@ -297,4 +297,30 @@ hr {
   animation-name: line_animation;
   animation-duration: 1s;
   animation-timing-function: linear;
+}
+
+/*About*/
+.profileAll {
+  width: 70%;
+  margin: 20px auto;
+}
+
+.profile {
+  height: 200px;
+  width: 200px;
+  overflow: hidden;
+  border-radius: 10%;
+  float: left;
+  margin-right: 20px;
+}
+
+.profileBlurb {
+text-align: left;
+padding-top: 10px;
+}
+
+.icons {
+  margin-top: 40px;
+  clear: both;
+  font-size: 2em;
 }
