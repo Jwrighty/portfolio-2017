@@ -2,68 +2,27 @@
 * --------------------------------------- */
 body{
   font-family: 'Yanone Kaffeesatz', sans-serif;
-
   color: #444;
 }
 
-h1{
-  font-size: 3em;
-  font-family: 'Yanone Kaffeesatz', sans-serif;
+h1 {
+  font-size: 8em;
 }
 
 p{
-  font-size: 1.1em;
+  font-size: 3.1em;
   font-family: 'Roboto', sans-serif;
-}
-
-.pagelink {
-  text-decoration: none;
-  color: white;
 }
 
 .content{
   position: relative;
   text-align: center;
-  /*width: 80%;*/
 }
-
-.contentText {
-  text-align: left;
-}
-
-.project {
-  /*width: 80%;*/
-}
-
-.project h1 {
-  margin-bottom: 30px;
-}
-
-.github {
-  width: 120px;
-  margin-top: 50px;
-  margin-right: 120px;
-  opacity: 0.8;
-}
-.githubtext {
-  font-size: 1em;
-}
-
-.website {
-  width: 135px;
-  margin-top: 50px;
-  opacity: 0.8;
-}
-.websitetext {
-  font-size: 1em;
-}
-
 
 /* Section 1
 * --------------------------------------- */
 #section0{
   background-color: #161616;
-
 }
 
 #section0 h1{
@@ -75,24 +34,31 @@ p{
   font-family: 'Roboto', sans-serif;
 }
 
-
 /* Section 2
 * --------------------------------------- */
 #section1{
-  background-color: #DCDCDD;
-  background-image: url('https://i.imgur.com/gxJla6z.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  background-color: #000;
+
 }
+@media only screen and (min-device-width : 900px) {
+  #section1{
+    background-color: #DCDCDD;
+    background-image: url('https://i.imgur.com/gxJla6z.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
 #section1 h1{
   color: white;
+  font-size: 4em;
+
 }
 #section1 p{
-  opacity: 0.8;
-
+  /*opacity: 1;*/
+  color: white;
 }
-
 
 /* Section 3
 * --------------------------------------- */
@@ -102,39 +68,131 @@ p{
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-
 }
+
 #section2 h1{
   color: white;
+  font-size: 4em;
 }
+
 #section2 p{
   opacity: 0.6;
 }
+
 /* Section 4
 * --------------------------------------- */
 #section3{
   background-color: #161616;
 }
+
 #section3 h1{
   color: #fff;
+  font-size: 4em;
 }
+
 #section3 p{
-  /*opacity: 1;*/
 }
 
-/*Responsive CSS*/
+/*------- MOBILE STYLINGS ------*/
 
-/* Smartphones (portrait and landscape) ----------- */
+/*--- FIRST SLIDE ---*/
+.fa-github {
+  color: grey;
+  margin-top: 20px;
+  margin-right: 50px;
+  transition: all 100ms ease-in-out;
+}
+
+.social {
+  font-size: 4em;
+  margin-top: 20px;
+}
+
+.fa-github:hover {
+  color: white;
+}
+
+.fa-link {
+  color: grey;
+}
+
+.fa-link:hover {
+  color: white;
+}
+
+.fa-linkedin-square {
+  color: grey;
+  margin-right: 50px;
+  transition: all 100ms ease-in-out;
+}
+
+.fa-linkedin-square:hover {
+  color: white;
+}
+
+.fa-envelope {
+  color: grey;
+  transition: all 100ms ease-in-out;
+}
+
+.fa-envelope:hover {
+  color: white;
+}
+
+.btn {
+  color: rgba(255, 255, 255, 0.5);
+  margin: 15px;
+  border: 1px solid rgba(255, 0, 0, 0.5);
+  background-color: rgba(255, 0, 0, 0.3);
+  cursor: crosshair;
+  width: 35%;
+  font-size: 2.5em;
+}
+
+.btn a {
+  font-size: 3em;
+}
+
+.btn:focus,
+.btn:active {
+  box-shadow: none;
+}
+
+.menu {
+  margin-top: 20px;
+}
+
+hr {
+  margin: 0 auto;
+  width: 40%;
+  height: 2px;
+  background-color: #96120C;
+}
+
+@keyframes line_animation {
+  from {
+    width: 0;
+  }
+  to {
+    width:40%;
+  }
+}
+
+.line {
+  animation-name: line_animation;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+}
+
+/*--- PROJECT SLIDES ---*/
 .projectContainer {
-  /*position: relative;*/
   width: 100%;
-  margin: -800px auto;
-  vertical-align: top;
+  /*margin: -500px auto;*/
+  /*vertical-align: top;*/
 }
 
 .projectImage {
-  /*display: block;*/
-  width: 100%;
+  width: 80%;
   height: auto;
   padding-left: 0 !important;
   padding-right: 0 !important;
@@ -143,24 +201,160 @@ p{
 .overlay h3 {
   padding: 30px 0 10px;
   font-size: 3em;
+  color: white;
 }
 
 .overlay p {
   padding: 0 100px;
   font-size: 2em;
+  font-family: 'Roboto', sans-serif;
+  text-align: justify;
+  margin-bottom: 50px;
 }
+
+.overlay a {
+  margin: 100px;
+}
+
+.overlay a i  {
+  font-size: 8em;
+}
+
+/*---- ABOUT ----*/
+.profileAll {
+  width: 70%;
+  margin: 20px auto;
+}
+
+.profile {
+  height: 200px;
+  width: 200px;
+  overflow: hidden;
+  border-radius: 10%;
+  float: left;
+  margin-right: 20px;
+}
+
+.profileBlurb {
+  text-align: left;
+  padding-top: 10px;
+}
+
+.icons {
+  margin-top: 40px;
+  clear: both;
+  font-size: 2em;
+}
+
 
 /* BROWSER CSS CHANGES */
 @media only screen and (min-device-width : 900px) {
+
+  h1 {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 3em;
+  }
+
+  p {
+    font-size: 1.1em;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  /*--- FIRST SLIDE ---*/
+  .fa-github {
+    color: grey;
+    margin-top: 20px;
+    margin-right: 20px;
+    transition: all 100ms ease-in-out;
+  }
+
+  .fa-github:hover {
+    color: white;
+  }
+
+  .fa-link {
+    color: grey;
+  }
+
+  .fa-link:hover {
+    color: white;
+  }
+
+  .fa-linkedin-square {
+    color: grey;
+    margin-right: 20px;
+    transition: all 100ms ease-in-out;
+  }
+
+  .fa-linkedin-square:hover {
+    color: white;
+  }
+
+  .fa-envelope {
+    color: grey;
+    transition: all 100ms ease-in-out;
+  }
+  .fa-envelope:hover {
+    color: white;
+  }
+
+  hr {
+    margin: 0 auto;
+    width: 20%;
+    height: 2px;
+    background-color: #96120C;
+  }
+
+  @keyframes line_animation {
+    from {
+      width: 0%;
+    }
+    to {
+      width:20%;
+    }
+  }
+
+  .line {
+    animation-name: line_animation;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+  }
+
+  .btn {
+    color: #656565;
+    transition: all 280ms ease-in-out;
+    margin: 5px;
+    border: 1px solid rgba(255, 0, 0, 0.3);
+    background-color: rgba(255, 0, 0, 0);
+    cursor: crosshair;
+    width: 15%;
+    font-size: 1em;
+  }
+
+  .btn:hover {
+    color: white;
+    background-color: rgba(255, 0, 0, 0.5);
+    width: 15%;
+  }
+
+  .btn:focus,
+  .btn:active {
+    box-shadow: none;
+  }
+
+  .social {
+    font-size: 2.5em;
+    margin-top: 10px;
+  }
+
+  /*--- PROJECT SLIDES ---*/
   .project {
     padding: 30px;
   }
 
   .projectContainer {
-    /*position: relative;*/
     width: 60%;
     margin: 0 auto;
-
   }
 
   .projectImage {
@@ -197,130 +391,44 @@ p{
     color: white;
     font-family: 'Roboto', sans-serif;
     text-align: justify;
+    margin-bottom: 10px;
+  }
+
+  .overlay a {
+    margin: 50px;
+  }
+
+  .overlay a i  {
+    font-size: 4em;
   }
 
   .projectContainer:hover .overlay {
     opacity: 1;
   }
 
-  .fa-github {
-    color: grey;
-    margin-top: 20px;
-    margin-right: 40px;
-    transition: all 100ms ease-in-out;
+  /*About*/
+  .profileAll {
+    width: 70%;
+    margin: 20px auto;
   }
 
-  .fa-github:hover {
-    color: white;
-
+  .profile {
+    height: 200px;
+    width: 200px;
+    overflow: hidden;
+    border-radius: 10%;
+    float: left;
+    margin-right: 20px;
   }
 
-  .githubtext {
-    font-size: 1em;
+  .profileBlurb {
+    text-align: left;
+    padding-top: 10px;
   }
 
-  .fa-link {
-    color: grey;
-
+  .icons {
+    margin-top: 40px;
+    clear: both;
+    font-size: 2em;
   }
-
-  .fa-link:hover {
-    color: white;
-  }
-
-  .websitetext {
-    font-size: 1em;
-  }
-
-  .fa-linkedin-square {
-    color: grey;
-    margin-right: 40px;
-    transition: all 100ms ease-in-out;
-  }
-  .fa-linkedin-square:hover {
-    color: white;
-  }
-
-  .fa-envelope {
-    color: grey;
-    transition: all 100ms ease-in-out;
-  }
-  .fa-envelope:hover {
-    color: white;
-  }
-}
-
-.btn {
-  color: #656565;
-  transition: all 280ms ease-in-out;
-  margin: 5px;
-  border: 1px solid rgba(255, 0, 0, 0.3);
-  cursor: crosshair;
-  width: 15%;
-}
-
-.btn:hover {
-  color: white;
-  background-color: rgba(255, 0, 0, 0.5);
-  width: 15%;
-}
-
-.btn:focus,
-.btn:active {
-  box-shadow: none;
-}
-
-.menu {
-  margin-top: 20px;
-  /*position: absolute;*/
-  /*left: -50%;
-  right: -50%;
-  bottom: -200%;*/
-}
-
-hr {
-  margin: 0 auto;
-  width: 20%;
-  height: 2px;
-  background-color: #96120C;
-}
-
-@keyframes line_animation {
-  from {
-    width: 0%;
-  }
-  to {
-    width:20%;
-  }
-}
-.line {
-  animation-name: line_animation;
-  animation-duration: 1s;
-  animation-timing-function: linear;
-}
-
-/*About*/
-.profileAll {
-  width: 70%;
-  margin: 20px auto;
-}
-
-.profile {
-  height: 200px;
-  width: 200px;
-  overflow: hidden;
-  border-radius: 10%;
-  float: left;
-  margin-right: 20px;
-}
-
-.profileBlurb {
-text-align: left;
-padding-top: 10px;
-}
-
-.icons {
-  margin-top: 40px;
-  clear: both;
-  font-size: 2em;
 }
