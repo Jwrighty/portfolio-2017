@@ -222,30 +222,36 @@ hr {
 
 /*---- ABOUT ----*/
 .profileAll {
-  width: 70%;
-  margin: 20px auto;
+  width: 80%;
+  margin: 0px auto;
 }
 
 .profile {
-  height: 200px;
-  width: 200px;
+  height: 400px;
+  width: 400px;
   overflow: hidden;
   border-radius: 10%;
-  float: left;
-  margin-right: 20px;
+  /* float: left; */
+  margin: 40px auto;
 }
 
 .profileBlurb {
-  text-align: left;
+  text-align: justify;
   padding-top: 10px;
+  font-size: 0.7em;
 }
 
 .icons {
   margin-top: 40px;
   clear: both;
-  font-size: 2em;
+  font-size: 6em;
+  padding: 0 100px;
 }
 
+@keyframes line_animation2 {
+  from {width: 0%;}
+  to {width:20%;}
+}
 
 /* BROWSER CSS CHANGES */
 @media only screen and (min-device-width : 900px) {
@@ -294,6 +300,7 @@ hr {
     color: grey;
     transition: all 100ms ease-in-out;
   }
+
   .fa-envelope:hover {
     color: white;
   }
@@ -305,17 +312,10 @@ hr {
     background-color: #96120C;
   }
 
-  @keyframes line_animation {
-    from {
-      width: 0%;
-    }
-    to {
-      width:20%;
-    }
-  }
+
 
   .line {
-    animation-name: line_animation;
+    animation-name: line_animation2;
     animation-duration: 1s;
     animation-timing-function: linear;
   }
