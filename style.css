@@ -312,8 +312,6 @@ hr {
     background-color: #96120C;
   }
 
-
-
   .line {
     animation-name: line_animation2;
     animation-duration: 1s;
@@ -408,8 +406,8 @@ hr {
 
   /*About*/
   .profileAll {
-    width: 70%;
-    margin: 20px auto;
+    width: 80%;
+    margin: 0px auto;
   }
 
   .profile {
@@ -419,16 +417,21 @@ hr {
     border-radius: 10%;
     float: left;
     margin-right: 20px;
+    margin-top: 0px;
   }
 
   .profileBlurb {
     text-align: left;
-    padding-top: 10px;
+    /*padding-top: 30px;*/
+    font-size: 1.1em;
   }
 
   .icons {
     margin-top: 40px;
     clear: both;
     font-size: 2em;
+  }
+  .icons p {
+    font-size: 0.5em;
   }
 }
