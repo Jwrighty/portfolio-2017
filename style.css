@@ -431,7 +431,9 @@ hr {
 
 /*---- GALLERY -----*/
 
-
+.all {
+  /*display: inline;*/
+}
 .gallery-title
 {
     /*font-size: 36px;*/
