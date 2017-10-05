@@ -4,19 +4,17 @@ $(document).ready(function() {
 
     scrollOverflow: true
   });
+  $(function() {
+    var selectedClass = '';
+    $('.fil-cat').click(function() {
+      selectedClass = $(this).attr('data-rel');
+      $('#portfolio').fadeTo(100, 0.1);
+      $('#portfolio div').not('.' + selectedClass).fadeOut().removeClass('scale-anm');
+      setTimeout(function() {
+        $('.' + selectedClass).fadeIn().addClass('scale-anm');
+        $('#portfolio').fadeTo(300, 1);
+      }, 300);
 
-  $('.filter-button').click(function() {
-    // get the data-filter value of the button
-    var filterValue = $(this).attr('data-filter');
-
-    // show all items
-    if (filterValue === 'all') {
-      $('.all').show('slow');
-    } else {
-      // hide all items
-      $('.all').not('.' + filterValue).hide('slow');
-      // and then, show only items with selected data-filter value
-      $('.all').filter('.' + filterValue).show('slow');
-    }
+    });
   });
 });
