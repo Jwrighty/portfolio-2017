@@ -243,7 +243,7 @@ hr {
   height: 400px;
   width: 400px;
   overflow: hidden;
-  border-radius: 10%;
+  
   margin: 40px auto;
 }
 
@@ -451,14 +451,14 @@ hr {
     height: 200px;
     width: 200px;
     overflow: hidden;
-    border-radius: 10%;
+    /*border-radius: 10%;*/
     float: left;
     margin-right: 20px;
     margin-top: 30px;
   }
   .profileBlurb {
     text-align: left;
-    /*padding-top: 30px;*/
+    padding-top: 30px;
     font-size: 1.1em;
   }
   .icons {
