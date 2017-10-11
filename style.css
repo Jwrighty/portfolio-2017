@@ -1,6 +1,6 @@
 body {
   font-family: 'Yanone Kaffeesatz', sans-serif;
-  color: #444;
+  color: #949494;
 }
 
 h1 {
@@ -30,7 +30,7 @@ p {
 
 #section0 p {
   color: #fff;
-  opacity: 0.4;
+  /*opacity: 0.4;*/
   font-family: 'Roboto', sans-serif;
 }
 
@@ -44,10 +44,10 @@ p {
 @media only screen and (min-device-width: 900px) {
   #section1 {
     background-color: #DCDCDD;
-    background-image: url('https://i.imgur.com/gxJla6z.jpg');
+    /*background-image: url('https://i.imgur.com/gxJla6z.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: center;*/
   }
 }
 
@@ -78,7 +78,7 @@ p {
 }
 
 #section2 p {
-  opacity: 0.6;
+  /*opacity: 0.6;*/
 }
 
 /* Section 4
@@ -93,7 +93,9 @@ p {
   font-size: 4em;
 }
 
-#section3 p {}
+#section3 p {
+
+}
 
 /*------- MOBILE STYLINGS ------*/
 
@@ -143,7 +145,7 @@ p {
 }
 
 .btn {
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.8);
   margin: 15px;
   border: 1px solid rgba(255, 0, 0, 0.5);
   background-color: rgba(255, 0, 0, 0.3);
@@ -188,48 +190,25 @@ hr {
 
 /*--- PROJECT SLIDES ---*/
 
-.projectContainer {
-  width: 100%;
-}
-
-.projectContainer .fa-github {
-  margin: 0;
-}
-
-.overlay .projectLinks {
-  text-align: center;
-  margin-bottom: 0;
-}
-
-.overlay .projectLinks p {
-  display: none;
-}
-
-.projectImage {
-  width: 100%;
-  height: auto;
-}
-
-.overlay h3 {
-  padding: 30px 0 10px;
-  font-size: 3em;
-  color: white;
-}
-
-.overlay p {
-  /*padding: 0 50px;*/
+#slide2 p {
   font-size: 2em;
-  font-family: 'Roboto', sans-serif;
+}
+
+#slide3 p {
+  font-size: 2em;
+}
+
+#slide4 p {
+  font-size: 2em;
+}
+
+#slide5 p {
+  font-size: 2em;
+}
+
+.projectBlurb {
   text-align: justify;
-  margin-bottom: 50px;
-}
-
-.overlay a {
-  margin: 100px;
-}
-
-.overlay a i {
-  font-size: 6em;
+  padding: 100px 0;
 }
 
 /*---- ABOUT ----*/
@@ -243,7 +222,7 @@ hr {
   height: 400px;
   width: 400px;
   overflow: hidden;
-  
+
   margin: 40px auto;
 }
 
@@ -327,7 +306,7 @@ hr {
     animation-timing-function: linear;
   }
   .btn {
-    color: #656565;
+    color: #949494;
     transition: all 280ms ease-in-out;
     margin: 5px;
     border: 1px solid rgba(255, 0, 0, 0.3);
@@ -348,62 +327,30 @@ hr {
     font-size: 2.5em;
     margin-top: 10px;
   }
+
   /*--- PROJECT SLIDES ---*/
-  .project {
-    padding: 30px;
-  }
-  .projectContainer {
-    width: 70%;
-    margin: 0 auto;
-  }
-  .projectContainer .fa-github {
-    margin: 0;
-  }
-  .overlay .projectLinks {
-    text-align: center;
-    margin-bottom: 0;
-  }
-  .projectImage {
-    display: block;
-    width: 100%;
-    height: auto;
-  }
-  .overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    transition: .3s ease;
-    background-color: rgba(0, 0, 0, 0.9);
-    border: 2px solid grey;
-  }
-  .overlay h3 {
-    /*padding: 0 30px;*/
-    /*text-align: left;*/
-    font-size: 3vw;
-    font-family: 'Yanone Kaffeesatz', sans-serif;
-    opacity: 0.8;
-  }
-  .overlay p {
-    padding: 0 30px;
-    font-size: 1.4vw;
-    font-family: 'Roboto', sans-serif;
-    text-align: justify;
-    /*margin-bottom: 10px;*/
-  }
-  .overlay a {
-    /*margin: 50px;*/
-  }
-  .overlay a i {
-    font-size: 3vw;
-  }
-  .projectContainer:hover .overlay {
-    opacity: 1;
-  }
+
+#slide2 p {
+  color: black;
+  font-size: 1em;
+  padding: 20px 100px;
+}
+#slide3 p {
+  color: black;
+  font-size: 1em;
+  padding: 20px 100px;
+}
+#slide4 p {
+  color: black;
+  font-size: 1em;
+  padding: 20px 100px;
+}
+#slide5 p {
+  color: black;
+  font-size: 1em;
+  padding: 20px 100px;
+}
+
 
   /*---- GALLERY -----*/
 
